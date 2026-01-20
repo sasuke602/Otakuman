@@ -1,8 +1,29 @@
 title: Otakuman
 email: youremail@example.com
 description: "趣味サイトサンプル"
-baseurl: ""   # GitHub Pages URL直下なら空
+baseurl: ""    # URL直下なら空
 url: "https://sasuke602.github.io"
+
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
-  - jekyll-include-cache
+  - jekyll-feed
+
+# Markdown 記事の URL パターン
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      permalink: /articles/:categories/:title/
+
+# サイドバーに表示するナビ
+navigation:
+  - title: ホーム
+    url: /
+  - title: 漫画考察
+    url: /articles/manga/
+  - title: 料理
+    url: /articles/cooking/
+  - title: 散歩
+    url: /articles/walk/
