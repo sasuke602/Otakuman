@@ -1,0 +1,8 @@
+title: Otakuman
+email: youremail@example.com
+description: "趣味サイトサンプル"
+baseurl: ""   # GitHub Pages URL直下なら空
+url: "https://sasuke602.github.io"
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-include-cache
